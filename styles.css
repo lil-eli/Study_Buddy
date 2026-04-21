@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Marker Felt', fantasy;
     margin: 0;
     padding: 0;
     background-color: #e2f0f5;
@@ -41,6 +41,7 @@ a {
     color: #76A9BB;
     margin-right: 10px;
     text-decoration: none;
+    text-align: right;
 }
 
 h1 {
@@ -60,14 +61,18 @@ p {
 button {
     background-color: #B1D3DF;
     color: #76A9BB;
-    border: none;
+    border: 3px solid #76A9BB;
+    border-radius: 15px;
     padding: 10px 20px;
     cursor: pointer;
+    font-family: 'Marker Felt', fantasy;
 }
 
 button:hover {
     background-color: #76A9BB;
     color: #B1D3DF;
+    font-family: 'Marker Felt', fantasy;
+    border: 3px solid #B1D3DF;
 }
 
 #taskList li {
@@ -77,10 +82,10 @@ button:hover {
   gap: 10px;
   padding: 15px;
   margin: 10px 0;
-  border: 1px solid #277098;
+  border: 5px solid #76A9BB;
   border-radius: 15px;
   background: #B1D3DF;
-  color: #527582;
+  color: #76A9BB;
 }
 
 #taskList li span {
