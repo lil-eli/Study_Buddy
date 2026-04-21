@@ -60,7 +60,6 @@ if (taskList !== null) {
     });
 
     const deleteBtn = document.getElementById("submitChanges");
-    //deleteBtn.textContent = "Delete";
 
     deleteBtn.addEventListener("click", function() {
         if (task.completed) {
