@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2f0f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #B1D3DF;
+    color: #76A9BB;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+    flex: 1;
+}
+footer {
+    background-color: #B1D3DF;
+    color: #76A9BB;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #B1D3DF;
+    color: #76A9BB;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: #76A9BB;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+h1 {
+    color: #76A9BB;
+}
+
+h2 {
+    color: #76A9BB;
+    margin-top: 20px;
+}
+
+p {
+    color: #76A9BB;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #B1D3DF;
+    color: #76A9BB;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #76A9BB;
+    color: #B1D3DF;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #277098;
+  border-radius: 15px;
+  background: #B1D3DF;
+  color: #527582;
+}
+
+#taskList li span {
+  flex: 1;
+}
+
+input[type="text"] {
+  padding: 10px;
+}
+
+input[type="date"] {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+#taskForm button[type="submit"] {
+  padding: 13px 40px;
+  margin-left: 15px;
+}
+
