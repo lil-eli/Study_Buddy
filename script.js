@@ -20,8 +20,6 @@ if (form !== null) {
 
     taskInput.value = "";
     dateInput.value = "";
-
-    alert("Task added!");
   });
 }
 
@@ -40,27 +38,44 @@ if (taskList !== null) {
     const li = document.createElement("li");
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.style.scale = "1.5";
     checkbox.checked = task.completed;
 
-    // Text
+    // Text in li
     const span = document.createElement("span");
-    span.textContent = `${task.text} (Due: ${task.dueDate})`;
+    const tspan = document.createElement("span");
+    const dspan = document.createElement("span");
+
+    dspan.style.textAlign = "right";
+
+    dspan.classList.add("dspan");
+
+    tspan.textContent = task.text;
+    dspan.textContent = '(due: ' + task.dueDate + ')';
+
+    //span.appendChild(tspan);
+    //span.appendChild(dspan);
 
     // Strike-through if completed
     if (task.completed) {
-      span.style.textDecoration = "line-through";
+      tspan.style.textDecoration = "line-through";
+      tspan.style.color = "#bb7676";
+      dspan.style.color = "#bb7676";
+      li.style.backgroundColor = "#dfb1b1";
+      li.style.borderColor = "#bb7676";
     }
 
-    // When checkbox changes
+    // Set complete status when checkbox toggled
     checkbox.addEventListener("change", function () {
-     task.completed = checkbox.checked;
-     tasks[index] = task;
-     localStorage.setItem("tasks", JSON.stringify(tasks));
-     location.reload();
+      task.completed = checkbox.checked;
+      tasks[index] = task;
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      location.reload();
     });
 
-    const deleteBtn = document.getElementById("submitChanges");
+    const deleteBtn = document.getElementById("Change");
 
+    // Delete task if completed
     deleteBtn.addEventListener("click", function() {
         if (task.completed) {
             tasks.splice(index, 1);
@@ -70,7 +85,9 @@ if (taskList !== null) {
     });
 
     li.appendChild(checkbox);
-    li.appendChild(span);
+    //li.appendChild(span);
+    li.appendChild(tspan);
+    li.appendChild(dspan);
     taskList.appendChild(li);
   });
 }
