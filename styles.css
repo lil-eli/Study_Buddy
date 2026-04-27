@@ -88,6 +88,11 @@ button:hover {
   color: #76A9BB;
 }
 
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
 #taskList li span {
   flex: 1;
 }
