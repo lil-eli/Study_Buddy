@@ -64,8 +64,13 @@ p {
     line-height: 1.5;
 }
 
-#slogan {
+p[id="slogan"] {
     font-size: 36px;
+    text-align: center;
+}
+
+p[id="detail"] {
+    font-size: 32px;
 }
 
 button {
