@@ -52,6 +52,7 @@ h1 {
 h2 {
     color: #76A9BB;
     margin-top: 20px;
+    font-size: 36px;
 }
 
 h2[id="taskLabel"] {
@@ -61,6 +62,10 @@ h2[id="taskLabel"] {
 p {
     color: #76A9BB;
     line-height: 1.5;
+}
+
+#slogan {
+    font-size: 36px;
 }
 
 button {
@@ -74,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: #c9dbe1;
+    background-color: #d6ebf3;
     border: 3px solid #76A9BB;
     color: #76A9BB;
 }
@@ -103,26 +108,35 @@ button:hover {
   flex: 1;
   margin-left: 6px;
   font-size: 25px;
-}
-
-#taskList .dspan {
-  margin-right: auto;
+  white-space: pre;
 }
 
 input[type="checkbox"] {
   accent-color: #bb7676;
 }
 
-
-input[type="text"] {
+input{
   padding: 15px 35px;
   font-size: 20px;
+  background-color: #f9fcfd;
+  border: #90a1a6 solid 2px;
+  color: #90a1a6;
+}
+
+::placeholder {
+  color: #90a1a6;
 }
 
 input[type="date"] {
+  margin-left: 15px;
+}
+
+select {
   padding: 15px 35px;
   margin-left: 15px;
   font-size: 20px;
+  border: #90a1a6 solid 2px;
+  color: #90a1a6;
 }
 
 button[id="add"] {
