@@ -65,8 +65,8 @@ p {
 
 button {
     background-color: #B1D3DF;
-    color: #76A9BB;
     border: 3px solid #76A9BB;
+    color: #76A9BB;
     border-radius: 15px;
     padding: 10px 20px;
     cursor: pointer;
@@ -74,10 +74,9 @@ button {
 }
 
 button:hover {
-    background-color: #76A9BB;
-    color: #B1D3DF;
-    font-family: 'Marker Felt', fantasy;
-    border: 3px solid #B1D3DF;
+    background-color: #c9dbe1;
+    border: 3px solid #76A9BB;
+    color: #76A9BB;
 }
 
 #taskList {
